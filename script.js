@@ -55,6 +55,14 @@ const books = [
         cover: "img/atdatq.jpg",
         pdf: "livros/Antonio Bispo dos Santos - A terra dá, a terra quer-Ubu Editora (2023).pdf",
         description: "é um ensaio quilombola contra-colonial. O autor critica a lógica capitalista da Bio-concentração (acúmulo) e defende a Bio-interação, que é a forma de vida baseada na reciprocidade e no compartilhamento. O livro ensina que a Terra não é um recurso, mas um parente que exige respeito e troca mútua para a vida continuar."
+    },
+    {
+        id: 8,
+        title: "HARRY POTTER e a Câmara Secreta",
+        author: "J.K. Rowling",
+        cover: "img/hp.jpeg",
+        pdf: "livros/harry-potter-e-a-camara-secreta.pdf",
+        description: "No segundo ano de Harry em Hogwarts, ele enfrenta novos desafios, incluindo a abertura da Câmara Secreta, que ameaça a segurança dos estudantes. Com a ajuda de seus amigos, Harry desvenda o mistério por trás dos ataques e confronta o monstro que habita a câmara."
     }
 ];
 
