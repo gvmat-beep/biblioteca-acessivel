@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor Acessível - Biblioteca Virtual</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="reader-header">
+        <h1 class="reader-title" id="reader-title">Carregando...</h1>
+        <div class="reader-controls">
+            <a href="index.html" class="back-to-library">← Voltar à Biblioteca</a>
+            <button class="reader-control-btn" id="reader-contrast">Alto Contraste</button>
+            <div style="display: flex; align-items: center; gap: 5px;">
+                <button class="font-size-btn" id="reader-font-decrease">A-</button>
+                <span>Tamanho</span>
+                <button class="font-size-btn" id="reader-font-increase">A+</button>
+            </div>
+            <button class="reader-control-btn" id="reader-audio">Ouvir Página</button>
+            <button class="libras-btn" id="libras-info">
+                <span>👐</span> Libras
+            </button>
+        </div>
+    </div>
+
+    <div class="reader-content">
+        <div class="accessible-content" id="accessible-content">
+            <div class="loading">Carregando livro...</div>
+        </div>
+        
+        <div class="page-navigation">
+            <button class="nav-btn" id="prev-page">← Página Anterior</button>
+            <span class="page-info" id="page-info">Página 1 de 1</span>
+            <button class="nav-btn" id="next-page">Próxima Página →</button>
+        </div>
+    </div>
+
+    <!-- Container do VLibras -->
+    <div class="vlibras-container">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="audio-player" id="audio-player">
+        <div class="audio-controls">
+            <button class="audio-btn-control" id="play-pause">▶</button>
+            <div class="progress-bar">
+                <div class="progress" id="audio-progress"></div>
+            </div>
+            <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+            <button class="close-audio" id="close-audio">✕</button>
+        </div>
+    </div>
+
+    <script src="leitor.js"></script>
+</body>
+</html>
