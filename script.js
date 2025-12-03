@@ -63,6 +63,14 @@ const books = [
         cover: "img/hp.jpeg",
         pdf: "livros/harry-potter-e-a-camara-secreta.pdf",
         description: "No segundo ano de Harry em Hogwarts, ele enfrenta novos desafios, incluindo a abertura da Câmara Secreta, que ameaça a segurança dos estudantes. Com a ajuda de seus amigos, Harry desvenda o mistério por trás dos ataques e confronta o monstro que habita a câmara."
+    },
+    {
+        id: 9,
+        title: "Percy Jackson - o Ladrão de Raios",
+        author: "Rick Riordan",
+        cover: "img/O_Ladrão_de_Raios.jpg",
+        pdf: "livros/percy-jackson-e-os-olimpianos_-o-ladrao-de-raios-vol-1-rick-riordan.pdf",
+        description: "Percy Jackson descobre que é um semideus, filho de Poseidon. Ele embarca em uma missão para recuperar o raio mestre de Zeus e evitar uma guerra entre os deuses. Com a ajuda de seus amigos, ele enfrenta monstros mitológicos e desvenda segredos sobre sua identidade."
     }
 ];
 
